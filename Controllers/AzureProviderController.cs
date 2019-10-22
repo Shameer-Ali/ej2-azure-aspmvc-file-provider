@@ -48,7 +48,7 @@ namespace EJ2AzureASPMVCFileProvider.Controllers
                 case "create":
                     return Json(operation.ToCamelCase(operation.Create(args.Path, args.Name)));
                 case "search":
-                    return Json(operation.ToCamelCase(operation.Search(args.Path, args.SearchString, args.ShowHiddenItems, args.CaseSensitive)));
+                    return Json(operation.ToCamelCase(operation.Search(args.Path, args.SearchString, args.ShowHiddenItems, args.CaseSensitive, args.Data)));
                 case "copy":
                     return Json(operation.ToCamelCase(operation.Copy(args.Path, args.TargetPath, args.Names, args.RenameFiles, args.TargetData, args.Data)));
                 case "move":
